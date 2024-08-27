@@ -31,6 +31,9 @@
 | 27  |  [Css Manipulation (PART 1)](./27css_manipulating1.html)|
 | 28  |  [Css Manipulation (PART 2)](./28css_manipulating2.html)|
 | 29  |  [Dimention Method](./29dimension_method.html)|
+| 30  |  [Get Css Properties](./30get_css_properties.html)|
+| 31  |  [Set Css Properties](./31set_css_properties.html)|
+
 
 
 
