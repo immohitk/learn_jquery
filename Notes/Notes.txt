@@ -1,0 +1,169 @@
+---------- CONNECTION TYPE ----------
+
+1. local Dir method -->    <script src="./js/jquery-3.7.1.min.js"></script>                                
+2. CDN method       -->    script src = "https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+
+
+
+---------- SELECTORS ---------- 
+
+1. jQuery Element selector
+2. jQuery #id selector
+3. jQuery .class selctor
+
+
+
+
+
+---------- EFFECTS ----------
+
+hide() - use to hide element from the html document.
+show() - use to show hidden elements in the html document.
+toggle() - use to hide/show elements using one button in the html document.
+
+fadeIn() - use to fade in(show) the hidden element in the html document using some parameters.
+fadeOut() - use to fade out(hide) the specific element in the html document using some parameters.
+fadeToggle() - use to fade in/show and fade out/hide the element in the html document.
+fadeto() - allows fading to a given opacity (value between 0 and 1).
+
+slideDown() - method is used to slide down an element..
+slideUp() - method is used to slide up an element.
+slideToggle() - method is used to slide up/down an element.
+
+animate() - method is used to create custom animations.
+
+stop() - method is used to stop animations or effects before it is finished.
+
+callback() - this function is executed after the current effect is 100% finished.
+
+chaining - Chaining allows us to run multiple jQuery methods (on the same element) within a single statement.
+
+
+
+---------- TRAVERSING ----------
+
+
+
+                                                | <Div>  |
+                                                    |
+                                                    |
+                                                 | <ul> |  
+                                           -------------------
+                                           |                  |
+                                           |                  | 
+                                        | <li> |            | <li> |
+                                            |                 |
+                                            |                 |
+                                     ---------------        | <b> |
+                                     |              |
+                                     |              |
+                                 | <span> |     | <span> | 
+
+
+Illustration explained:
+
+
+          ->  The <div> element is the parent of <ul>, and an ancestor of everything inside of it.
+          ->  The <ul> element is the parent of both <li> elements, and a child of <div>.
+          ->  The left <li> element is the parent of <span>, child of <ul> and a descendant of <div>.
+          ->  The <span> element is a child of the left <li> and a descendant of <ul> and <div>.
+          ->  The two <li> elements are siblings (they share the same parent).
+          ->  The right <li> element is the parent of <b>, child of <ul> and a descendant of <div>.
+          ->  The <b> element is a child of the right <li> and a descendant of <ul> and <div>.
+
+
+
+
+
+Traversing the DOM
+
+        -> jQuery provides a variety of methods that allow us to traverse the DOM ( Document Object Model ).
+        -> The largest category of traversal methods are tree-traversal.
+        -> Three useful jQuery methods for traversing up( ancestor ) the DOM tree are:
+
+                1. parent() - returns the direct parent element of the selected element.
+                2. parents() - returns all ancestor elements of the selected element, all the way up to the document's root element (<html>).
+                3. parentsUntil() - returns all ancestor elements between two given arguments.
+
+
+        -> Two useful jQuery methods for traversing down ( descendant ) the DOM tree are:
+
+                1. children() -  returns all direct children of the selected element.
+                2. find() - returns descendant elements of the selected element, all the way down to the last descendant.
+
+
+        -> There are many useful jQuery methods for traversing sideways ( siblings ) in the DOM tree:
+
+                1. siblings() - returns all sibling elements of the selected element.
+                2. next() - returns the next sibling element of the selected element.
+                3. nextAll() - returns all next sibling elements of the selected element.
+                4. nextUntil()- returns all next sibling elements between two given arguments.
+                5. prev() - returns the previous sibling element of the selected element.
+                6. prevAll() - returns all previous sibling elements of the selected element.
+                7. prevUntil() - returns all previous sibling elements between two given arguments.
+
+    
+        -> The first(), last(), eq(), filter() and not() Methods
+
+                1. first() -  returns the first element of the specified elements.
+                2. last() - returns the last element of the specified elements.
+                3. eq() - returns the element at the specified index within the set of matched elements.
+                4. filter() - reduces the set of matched elements to those that match the specified filter.
+                5. not() - removes elements from the set of matched elements that match the specified filter.
+                
+
+
+
+---------- jQuery DOM Manipulation ----------
+
+Get Content - Three simple, but useful, jQuery methods for DOM manipulation are:
+
+                -> text() - Sets or returns the text content of selected elements.
+                -> html() - Sets or returns the content of selected elements (including HTML markup).
+                -> val() - Sets or returns the value of form fields.
+                -> attr() - method is used to get attribute values.
+
+
+Set Content - We will use the same three methods from the previous page to set content:
+
+                -> text() - Sets or returns the text content of selected elements.
+                -> html() - Sets or returns the content of selected elements (including HTML markup).
+                -> val() - Sets or returns the value of form fields.
+                -> attr() - method is used to set/change attribute values.
+
+
+Add New HTML Content - We will look at four jQuery methods that are used to add new content:
+
+                -> append() - Inserts content at the end of the selected elements
+                -> prepend() - Inserts content at the beginning of the selected elements
+                -> after() - Inserts content after the selected elements
+                -> before() - Inserts content before the selected elements
+
+
+Remove Elements/Content - To remove elements and content, there are mainly two jQuery methods:
+
+                -> remove() - Removes the selected element (and its child elements)
+                -> empty() - Removes the child elements from the selected element
+
+
+
+jQuery Manipulating CSS - jQuery has several methods for CSS manipulation:
+
+                -> addClass() - Adds one or more classes to the selected elements
+                -> removeClass() - Removes one or more classes from the selected elements
+                -> toggleClass() - Toggles between adding/removing classes from the selected elements
+                -> css() - Sets or returns the style attribute
+
+
+
+jQuery Dimension Methods - jQuery has several important methods for working with dimensions:
+
+                -> width() - method sets or returns the width of an element (excludes padding, border and margin).
+                -> height() - method sets or returns the height of an element (excludes padding, border and margin).
+                -> innerWidth() - method returns the width of an element (includes padding).
+                -> innerHeight() - method returns the height of an element (includes padding).
+                -> outerWidth() - method returns the width of an element (includes padding and border).
+                -> outerHeight() - method returns the height of an element (includes padding and border).
+                -> outerWidth(true) - method returns the width of an element (includes padding, border, and margin).
+                -> outerHeight(true) - method returns the height of an element (includes padding, border, and margin).

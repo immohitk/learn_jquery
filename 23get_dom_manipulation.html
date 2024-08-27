@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Jquery</title>
+      <script src = "https://code.jquery.com/jquery-3.7.1.min.js"></script>
+      <script>
+          $(document).ready(function(){
+
+              $("#btn1").click(function(){
+                alert($("#demo").text());
+              });
+
+              $("#btn2").click(function(){
+                alert($("#demo").html());
+              });
+
+              $("#btn3").click(function(){
+                alert($("#test").val());
+              });
+
+              $("#btn4").click(function(){
+                alert($("#google").attr("href"));
+  });
+         });
+        </script>
+    </head>
+    <style>
+       #demo {
+            background: black;
+            color: white;
+            font-size: 22px;
+      }
+       button {
+            background: red;
+            color: white;
+            font-size: 30px;
+            text-align: center;
+            padding: 15px;
+      }
+      
+      </style>
+    <body>
+
+        <h1>Hello World!!</h1>
+
+        <p id="demo">This is a <em>demo paragraph</em>. This is another <strong>paragraph</strong> .</p>
+        <p> Click the below button to get the test content of the HTML content of the above line. </p>
+
+        <p>Name: <input type="text" id="test" value="Mickey Mouse"></p>
+
+        <p><a href="https://www.google.com" id="google">Google.com</a></p>
+        
+        <button id="btn1">Set Text</button>
+        <button id="btn2">Set HTML</button>
+        <button id="btn3">Value</button>
+        <button id="btn4">Get Attribute</button>
+        
+    </body>
+</html>

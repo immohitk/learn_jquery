@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jquery</title>
+    <script src = "https://code.jquery.com/jquery-3.7.1.min.js"></script> 
+    <script>
+        $(document).ready(function() {
+           $("button").click(function() {
+            $("#div1").animate({ 
+                left: '250px',
+                opacity: '0.5',
+                height: '150px',
+                width: '150px'
+            });
+           });
+        });
+    </script>
+    <style>
+        div{
+            height: 100px;
+            width: 100px;
+            border: 2px solid black;
+            background-color: red;
+            position: absolute;
+        }
+
+    </style>
+</head>
+<body>
+    <h1> Learn jQuery </h1>
+    <p> Get some knowledge of jQuery</p>  
+    <button>Slide down/up element</button> 
+
+    <div id="div1">button1</div>
+
+</body>
+</html>

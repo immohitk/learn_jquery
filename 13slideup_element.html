@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jquery</title>
+    <script src = "https://code.jquery.com/jquery-3.7.1.min.js"></script> 
+    <script>
+        $(document).ready(function() {
+           $("button").click(function() {
+            $("#div1").slideUp("fast");
+            $("#div2").slideUp("slow");
+           });
+        });
+    </script>
+    <style>
+        div{
+            height: 100px;
+            width: 100px;
+            border: 2px solid black;
+        }
+
+        #div1{
+            background-color: red;
+            padding: 50px;
+        }
+
+        #div2{
+            background-color: blue;
+            padding: 50px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1> Learn jQuery </h1>
+    <p> Get some knowledge of jQuery</p>  
+    <button>Slide Up and dispaly invisible element</button> 
+
+    <div id="div1">button1</div>
+    <div id="div2">button2</div>
+
+</body>
+</html>

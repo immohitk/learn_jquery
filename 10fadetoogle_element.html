@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jquery</title>
+    <script src = "https://code.jquery.com/jquery-3.7.1.min.js"></script> 
+    <script>
+        $(document).ready(function() {
+           $("button").click(function() {
+            $("#div1").fadeToggle();
+            $("#div2").fadeToggle("slow");
+            $("#div3").fadeToggle(2000);
+            $("#div4").fadeToggle("fast");
+           });
+        });
+    </script>
+    <style>
+        div{
+            height: 100px;
+            width: 100px;
+            border: 2px solid black;
+        }
+
+        #div1{
+            background-color: red;
+        }
+
+        #div2{
+            background-color: blue;
+        }
+
+        #div3{
+            background-color: green;
+        }
+
+        #div4{
+            background-color: yellow;
+        }
+
+    </style>
+</head>
+<body>
+    <h1> Learn jQuery </h1>
+    <p> Get some knowledge of jQuery</p>  
+    <button>Fade IN/OUT element</button> 
+
+    <div id="div1">button1</div>
+    <div id="div2">button2</div>
+    <div id="div3">button3</div>
+    <div id="div4">button4</div>
+
+</body>
+</html>
